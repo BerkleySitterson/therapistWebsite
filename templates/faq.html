@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/style.css">
+        <script defer src="../static/index.js"></script>
+        <script defer src="https://kit.fontawesome.com/e27ccd9755.js" crossorigin="anonymous"></script>
+
+        <style>
+            body {
+                font-family: 'Lato', Arial, sans-serif;
+                background: linear-gradient(to bottom, var(--primary-bg), var(--light-color));
+                height: 100vh;
+                width: 100vw;
+                display: grid;
+                grid-template-rows: 6rem 1fr 3rem;
+                grid-template-columns: 1fr;
+                grid-template-areas: "header" "main" "footer";
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <header>
+            <h1 id="header_logo">Mindwell Holistic Therapy</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="column">
+
+            <h1 class="lrg_txt">FAQ's</h1>
+            
+            <button class="accordion">How can we get in touch?</button>
+            <div class="panel">
+                <p>Contacting me is easy! All you need to do is click on the 'Contact' page in the top right of the screen. Once you are there, 
+                    you can write me a message, see where I am located, or follow my social media accounts!</p>
+            </div>
+
+            <button class="accordion">What are the prices for the different services?</button>
+            <div class="panel">
+                <p>The prices vary from client to client. It all depends on how long you will need my services as well as location and age. Please 
+                    contact me if you have any other questions or concerns!</p>
+            </div>
+
+            <button class="accordion">How experienced are you?</button>
+            <div class="panel">
+                <p>I am a well-known and respected social worker with over a decade of experience helping all kinds of patients work through whatever situation they find themselves in.</p>
+            </div>
+
+            <button class="accordion">Where are you located?</button>
+            <div class="panel">
+                <p>I am located near West Columbia and have no issue traveling for my patients. Their well-being is my utmost priority. You can also view a map on the area I am located in on 
+                    the 'Contact' page.</p>
+            </div>
+
+            <button class="accordion">What is your availability?</button>
+            <div class="panel">
+                <p>I am available to work Monday-Friday from 8am to 6pm most weeks. If there is a change in my availability I will send out an email to all clients 
+                    notifying them on the updated hours for the week.</p>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Mindwell Holistic Therapy, LLC</p>
+        </footer>
+    </body>
+</html>
